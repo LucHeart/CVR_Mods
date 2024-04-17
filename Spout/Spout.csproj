@@ -51,6 +51,8 @@
       <EmbeddedResource Include="Resources\KlakSpout.dll" />
       <None Remove="KlakSpout\NativeDll\KlakSpout.dll" />
       <None Remove="blit" />
+      <None Remove="Resources\logo.png" />
+      <EmbeddedResource Include="Resources\logo.png" />
     </ItemGroup>
     
 </Project>

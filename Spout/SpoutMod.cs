@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using System.Reflection;
 using LucHeart.Spout;
+using LucHeart.Spout.Patches;
+using LucHeart.Spout.UI;
 using MelonLoader;
 using MelonLoader.Utils;
 using UnityEngine;
@@ -20,11 +22,20 @@ public sealed class SpoutMod : MelonMod
 
     public override void OnInitializeMelon()
     {
+        HarmonyInstance.PatchAll(typeof(PortableCameraPatch));
+        
         MelonConfig.Register();
         
         ExtractNativeSpoutLib();
         LoadAssetBundle();
         LoadShader();
+        
+        MainUi.Start();
+    }
+
+    public override void OnSceneWasInitialized(int buildIndex, string sceneName)
+    {
+        if(sceneName == "Preparation") GameViewSetup.SetupGameView();
     }
 
     private void ExtractNativeSpoutLib()
