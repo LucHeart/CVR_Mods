@@ -1,0 +1,23 @@
+{
+  "_id": -1,
+  "name": "LucHeart.Spout",
+  "modversion": "1.0.0",
+  "gameversion": "2024r175",
+  "loaderversion": "v0.6.1",
+  "modtype": "Mod",
+  "author": "LucHeart",
+  "description": "Adds Spout support for the portable camera and game view (your screen) into the game. This can be received via e.g. obs. Check [GitHub](https://github.com/LucHeart/CVR_Mods/tree/master/Spout) for more info\n\n",
+  "searchtags": [
+    "spout",
+    "screen",
+    "capture",
+    "record"
+  ],
+  "requirements": [
+    "[BTKUILib](https://api.cvrmg.com/v1/mods/download/113)"
+  ],
+  "downloadlink": "https://github.com/LucHeart/CVR_Mods/releases/download/spout-1.0.0/LucHeart.Spout.dll",
+  "sourcelink": "https://github.com/LucHeart/CVR_Mods/tree/master/Spout",
+  "changelog": "Initial release",
+  "embedcolor": "E14A6D"
+}
