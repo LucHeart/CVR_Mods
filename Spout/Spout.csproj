@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>12</LangVersion>
+        <AssemblyName>LucHeart.Spout</AssemblyName>
+        <RootNamespace>LucHeart.Spout</RootNamespace>
+        <Company>LucHeart</Company>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="0Harmony">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\MelonLoader\net35\0Harmony.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="BTKUILib">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\Mods\BTKUILib.dll</HintPath>
+        </Reference>
+        <Reference Include="ECM2">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\ECM2.dll</HintPath>
+        </Reference>
+        <Reference Include="MelonLoader">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\MelonLoader\net35\MelonLoader.dll</HintPath>
+        </Reference>
+        <Reference Include="Unity.RenderPipelines.Core.Runtime">
+          <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+          <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+            <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ScreenCaptureModule">
+          <HintPath>..\..\..\..\..\Games\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\blit" />
+      <EmbeddedResource Include="Resources\KlakSpout.dll" />
+      <None Remove="KlakSpout\NativeDll\KlakSpout.dll" />
+      <None Remove="blit" />
+    </ItemGroup>
+    
+</Project>
