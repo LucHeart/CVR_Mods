@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
 using LucHeart.Spout;
 using MelonLoader;
@@ -21,6 +20,8 @@ public sealed class SpoutMod : MelonMod
 
     public override void OnInitializeMelon()
     {
+        MelonConfig.Register();
+        
         ExtractNativeSpoutLib();
         LoadAssetBundle();
         LoadShader();
